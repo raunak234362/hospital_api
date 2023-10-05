@@ -1,5 +1,7 @@
+// Importing Mongoose library
 const mongoose=require('mongoose');
 
+// Defining mongoose schema for the 'Doctor' Model
 const doctorSchemas= new mongoose.Schema({
     name:{
         type:String,
@@ -13,6 +15,8 @@ const doctorSchemas= new mongoose.Schema({
     
 })
 
+// Creating mongoose model named 'Doctor' Based on the defined schema
 const Doctor=new mongoose.model("Doctor",doctorSchemas)
 
+// Exporting the model for use in other parts of the application
 module.exports=Doctor;

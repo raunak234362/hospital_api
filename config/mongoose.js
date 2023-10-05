@@ -1,3 +1,4 @@
+// Importing mongoose
 const mongoose=require("mongoose");
 
 mongoose.connect('mongodb+srv://raunak:1234@cluster0.k9azr0j.mongodb.net/?retryWrites=true&w=majority');

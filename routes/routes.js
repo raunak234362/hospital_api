@@ -1,5 +1,6 @@
 const express=require("express");
-const { registerDoctor, registerPatient, createReport, all_reports, AllReports } = require("../controller/userController");
+const passport=require('passport');
+const { registerDoctor, registerPatient, createReport, all_reports, AllReports, login } = require("../controller/userController");
 const router=express.Router();
 
 router.post('/doctors/register',registerDoctor);
